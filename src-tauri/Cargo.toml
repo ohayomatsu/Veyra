@@ -1,0 +1,16 @@
+[package]
+name = "veyra-optimizer"
+version = "0.7.0"
+description = "Veyra visual preview"
+authors = ["Veyra"]
+edition = "2021"
+
+[lib]
+name = "veyra_optimizer_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
