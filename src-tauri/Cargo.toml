@@ -1,7 +1,7 @@
 [package]
 name = "veyra-optimizer"
-version = "0.7.0"
-description = "Veyra visual preview"
+version = "0.8.0"
+description = "Veyra safe Windows optimization"
 authors = ["Veyra"]
 edition = "2021"
 
@@ -14,3 +14,9 @@ tauri-build = { version = "2", features = [] }
 
 [dependencies]
 tauri = { version = "2", features = [] }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.55"

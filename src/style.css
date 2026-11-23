@@ -18,3 +18,5 @@ main::-webkit-scrollbar{width:7px}main::-webkit-scrollbar-thumb{background:#3d3d
 .main-inner{margin:0 auto;flex:1}
 footer{flex-shrink:0}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+.tweak-actions{display:flex;gap:8px;flex-wrap:wrap}.tweak-actions button:disabled{opacity:.35;cursor:not-allowed}.tweak-tags{flex-wrap:wrap}
